@@ -11,6 +11,12 @@
    --scorpion               : #585858;
    --dove-gray              : #6E6E6E;
    --white                  : #FFFFFF;
+
+   /* Social Networks */
+   --facebook               : #4267b2;
+   --twitter                : #1da1f2;
+   --linkedin               : #0077B5;
+   --github                 : #8241f9;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -79,7 +85,7 @@ main#app{
 
 
 /* Welcome */
-#title-welcome, #title-profile{
+#title-welcome, #title-profile, #title-social{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -90,6 +96,10 @@ main#app{
 
 #title-welcome{
     background-image: url(../assets/img/perfil/explanada.jpg);
+}
+
+#title-social{
+    background-image: url(../assets/img/perfil/social.jpg);
 }
 
 
@@ -223,6 +233,39 @@ main#app{
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+/* Card Social */
+.card-social h5{
+    font-size: 2em;
+}
+
+.social-links{
+    font-size: 2.5em;
+}
+
+.social-links a{
+    text-decoration: none;    
+}
+
+.social-links a i{
+    transition: all ease 0.5s;
+}
+
+.social-links a.facebook:hover i{
+    color: var(--facebook);
+}
+
+.social-links a.twitter:hover i{
+    color: var(--twitter);
+}
+
+.social-links a.linkedin:hover i{
+    color: var(--linkedin);
+}
+
+.social-links a.github:hover i{
+    color: var(--github);
 }
 
 /* CV */
