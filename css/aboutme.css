@@ -8,6 +8,8 @@
    --alabaster              : #FAFAFA;
    --mercury                : #E9E9E9;
    --black                  : #2E2E2E;
+   --scorpion               : #585858;
+   --dove-gray              : #6E6E6E;
    --white                  : #FFFFFF;
 }
 
@@ -77,10 +79,17 @@ main#app{
 
 
 /* Welcome */
-#title-welcome{
-    background-image: url(../assets/img/perfil/explanada.jpg);
+#title-welcome, #title-profile{
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#title-profile{
+    background-image: url(../assets/img/perfil/profile.jpg);
+}
+
+#title-welcome{
+    background-image: url(../assets/img/perfil/explanada.jpg);
 }
 
 
@@ -159,6 +168,11 @@ main#app{
     padding: 0 10px;
 }
 
+.content-profile{
+    display: flex;
+    flex-direction: column !important;
+}
+
 .title{
     border-right: 5px solid var(--mercury);
 }
@@ -195,6 +209,7 @@ main#app{
 }
 
 .quote{
+    font-style: italic;
     padding-left: 10px;
 }
 
@@ -208,6 +223,22 @@ main#app{
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+/* CV */
+.download-cv{
+    border: solid 1px #2E2E2E;
+    border-radius: 0.4em;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+
+.download-cv:hover{
+    background: var(--black);
+    color: var(--white);
 }
 
 /* Grid */
