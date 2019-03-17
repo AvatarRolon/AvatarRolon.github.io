@@ -84,12 +84,14 @@ main#app {
 }
 
 
-/* Welcome */
+/* Welcome */ /* Parallax Efect */
 #title-welcome,
 #title-profile,
 #title-social {
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: 0%  100%;
+    background-size: 50% 90%; 
 }
 
 #title-profile {
