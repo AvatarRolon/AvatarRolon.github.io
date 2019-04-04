@@ -2,4 +2,8 @@
     #title-welcome, #title-profile, #title-social{
         display: none;
     }
+
+    h5.text-mobile{
+        font-size: 1.2em;
+    }
 }
