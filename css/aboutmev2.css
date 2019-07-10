@@ -1,0 +1,244 @@
+/* ----------------------------------------------------------------------- */
+/* Imports Area */
+@import url(./scroll.css);
+
+/* ----------------------------------------------------------------------- */
+/* Root Area */
+:root {
+    --alabaster: #FAFAFA;
+    --mercury: #E9E9E9;
+    --black: #2E2E2E;
+    --scorpion: #585858;
+    --dove-gray: #6E6E6E;
+    --white: #FFFFFF;
+
+    /* Social Networks */
+    --facebook: #1977F3;
+    --twitter: #1da1f2;
+    --linkedin: #0077B5;
+    --github: #8241f9;
+
+    /* Colores nuevos */
+    --blackPearl: #04091B;
+    --arapawa: #0F236C;
+    --minsk: #45377A;
+    --governorBay: #3138B4;
+    --trendyPink: #905FA5;
+
+    /* Background */
+    --imagebg: url("../assets/img/bg/milky-way-984050_1920.jpg");
+}
+
+/* ----------------------------------------------------------------------- */
+/* All elements Area */
+* {
+    color: var(--alabaster);
+    font-family: 'Merienda', cursive;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Tags Area */
+html {
+    scroll-behavior: smooth;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Grid */
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* Class Area */
+.bg-blur{
+    border: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+    position: fixed;
+    background: var(--imagebg) no-repeat center center fixed;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+}
+
+.grow-05 {
+    flex-grow: 0.5;
+}
+
+.section {
+    display: flex;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ID's Area */
+
+
+/* ----------------------------------------------------------------------- */
+/* Specific divs Area */
+#start {
+    background: var(--blackPearl);
+    border-radius: 0.4em;
+    margin: 1% auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.head {
+    width: 100%;
+    background: linear-gradient(to right, #453879, #8A64AF);
+    padding-bottom: 3px;
+}
+
+.border {
+    background: var(--blackPearl);
+    color: white;
+    padding: 10px;
+}
+
+.profile-img {
+    text-align: center;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    border-radius: 100%;
+    margin: auto auto;
+    width: 150px;
+}
+
+#name {
+    font-size: 2em;
+}
+
+.quote {
+    border-left: 5px solid var(--mercury);
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.social-links {
+    font-size: 1.5em;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a i {
+    transition: all ease 0.5s;
+}
+
+.social-links a.facebook:hover i {
+    color: var(--facebook);
+}
+
+.social-links a.twitter:hover i {
+    color: var(--twitter);
+}
+
+.social-links a.linkedin:hover i {
+    color: var(--linkedin);
+}
+
+.social-links a.github:hover i {
+    color: var(--github);
+}
+
+.download-cv{
+    color: #A483EC;
+    transition: all 0.5s;
+}
+
+.download-cv:hover{
+    color: var(--trendyPink);
+}
+
+/* Container */
+#nav{
+    background: var(--blackPearl);
+    border-radius: 0.4em;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 20px;
+    width: 50%;
+    height: 20px;
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.header-menu li a, .header-menu li a i{
+    color: #A483EC;
+    align-self: center;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: all ease-out 0.2s;
+}
+
+.header-menu li a i{
+    padding: 1px;
+}
+
+.header-menu li a:hover, .header-menu li a:hover i {
+    text-shadow: 0 0 5px var(--trendyPink);
+    color: var(--trendyPink);
+}
+
+.header-menu li a {
+    text-decoration: none;
+}
+
+ul li{
+    position: relative;
+    height: 100%;
+}

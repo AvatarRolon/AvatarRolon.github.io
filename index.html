@@ -11,219 +11,125 @@
 
 
     <!-- Css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/aboutme.css">
-    <link rel="stylesheet" href="./css/aboutme-smarthphone.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/aboutmev2.css">
+
+    <link rel="stylesheet" href="./css/aboutme-smarthphonev2.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav id="nav">
+    <div class="bg-blur"></div>
+    <!-- Nav -->
+    <nav>
         <div class="container">
-            <!-- <div class="col">
-                <div class="header-logo">
-                    <img src="./assets/img/perfil/pp.jpeg" class="img-logo" alt="About Me">
-                </div>                
-            </div> -->
-            <div class="col">
-                <div class="row">
-                    <ul class="header-menu justify-content-end">
-                        <li>
-                            <a href="#about">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#profile">Profile</a>
-                        </li>
-                        <li>
-                            <a href="#social">Social Networks</a>
-                        </li>
-                        <li>
-                            <img src="./assets/img/perfil/pp.jpeg" class="img-logo" alt="Profile Picture">
-                        </li>
-                    </ul>
+            <div id="nav">
+                <div class="col">
+                    <div class="row">
+                        <ul class="header-menu justify-content-end">
+                            <li>
+                                <a href="#about"><i class="fas fa-address-card"></i> About Me</a>
+                            </li>
+                            <li>
+                                <a href="#profile"><i class="fas fa-trophy"></i> Personal Achievements</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <main id="app">
-        <div class="row" id="about">
-            <div class="section">
-                <div class="col title" id="title-welcome">
-                    <div class="overlay">
-                        <h1>
-                            About Me
-                        </h1>
-                    </div>
-                </div>
-                <div class="col content">
-                    <div class="card">
-                        <div class="top-card">
-                            <div class="top-image">
-                                <img src="./assets/img/perfil/pp.jpeg" class="img-card" alt="About Me">
-                            </div>
-                            <div class="quote">
-                                <p>
-                                    "Patient is the best quality for everything."
-                                    <br><br>
-                                    -- My father
-                                </p>
-                            </div>
-                        </div>
-                        <div class="text-card">
-                            <div class="row">
-                                <p>
-                                    Greetings. I'm <strong>Carlos Guillermo Rolon Fabian</strong>, i studied <strong>Computational
-                                    Systems Engineering</strong> at <strong>Instituto Tecnol&oacute;gico de Chetumal</strong>.
-                                    <br><br>
-                                    I'm Actually living in Chetumal Quintana Roo.
-                                    <br><br>
-                                    I am a software developer. I am a fan of technology, design, and music. I’m also
-                                    interested in video games and animation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="profile">
-            <div class="section">
-                <div class="col title" id="title-profile">
-                    <div class="overlay">
-                        <h1>
-                            Profile
-                        </h1>
-                    </div>
-                </div>
-                <div class="col content content-profile">
-                    <div class="card card-profile">
-                        <div class="top-card">
-                            <div class="row">
-                                <h5>Resume</h5>
-                            </div>
-                        </div>
-                        <div class="text-card">
-                            <div class="row">
-                                <p>
-                                    My skills include extensive knowledge of programming languages and practical
-                                    experience. I have the ability to plan, design and build computational systems.
-                                    Also,
-                                    I am an effective team member and an excellent leader when it’s required. For now,
-                                    I am hoping to become a software developer. However, in the future, I expect to
-                                    become a scrum master to head my own team. I am currently seeking a position in
-                                    a development team, due to I have the theoretical and practical knowledge, as well
-                                    as the experience to face the challenges in the Information Technology world.
-                                </p>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="card card-profile">
-                        <div class="top-card">
-                            <div class="row">
-                                    <a href="./assets/docs/CV - Carlos Rolon.pdf" class="download-cv" target="_blank">Download Resume</a>
-                            </div>
-                            <div class="row">
-                                <section>
-                                    <input type="radio" id="mostrar-modal" name="modal"/>
-                                    <label for="mostrar-modal">More about me</label>      
-                                    <input type="radio" id="cerrar-modal" name="modal"/>
-                                    <label for="cerrar-modal"><i class="fas fa-times" title="Cerrar" ></i></label>                              
-                                    <div id="modal">                                        
-                                        <div class="information">                                            
-                                            <div class="col">
-                                                <div class="card card-profile">
-                                                    <div class="top-card">
-                                                        <div class="row">
-                                                            <h5>Participations</h5> 
-                                                        </div>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="start">
+                        <div class="row">
+                            <div class="head">
+                                <div class="border">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row" id="name">
+                                                        Carlos Rolon
                                                     </div>
-                                                    <div class="text-card">
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <p>
-                                                                    1.- Ganan aplicaciones para prevenir desastres por inundaciones en la Tercera Escuela Internacional de Verano
-                                                                </p>                                                           
-                                                            </div>
-                                                        </div>
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <br><br>
-                                                                <p><a href="http://www.udg.mx/es/noticia/ganan-aplicaciones-para-prevenir-desastres-por-inundaciones-tercera-escuela-internacional" class="more-news" target="_blank" >Go to page</a></p>
-                                                            </div>
-                                                        </div>
-                                                        <br><br>
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <p>
-                                                                    2.- Segunda Feria Estatal de Ciencias, Ingenierías e Innovación 2018
-                                                                </p>                                                           
-                                                            </div>
-                                                        </div>
-                                                        <div class="col">
-                                                            <div class="row">
-                                                                <br><br>
-                                                                <p><a href="http://itchetumal.edu.mx/index.php/noticias/212-segunda-feria-estatal-de-ciencias-ingenierias-e-innovacion-2018" class="more-news" target="_blank" >Go to page</a></p>
-                                                            </div>
+                                                    <div class="row">
+                                                        <div class="social-links">
+                                                            <a href="https://www.facebook.com/carlosguillermo.rolonfabian"
+                                                                class="facebook" target="_blank">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                            <a href="https://twitter.com/rolonchas" class="twitter"
+                                                                target="_blank">
+                                                                <i class="fab fa-twitter-square"></i>
+                                                            </a>
+                                                            <a href="https://www.linkedin.com/in/carlos-guillermo-rolon-fabian-98ba33180?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpMIP9U%2FyTJODEXHomUuytQ%3D%3D"
+                                                                class="linkedin" target="_blank">
+                                                                <i class="fab fa-linkedin"></i>
+                                                            </a>
+                                                            <a href="https://github.com/AvatarRolon" class="github"
+                                                                target="_blank">
+                                                                <i class="fab fa-github-square"></i>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                                                                             
+                                            </div>
+                                        </div>
+                                        <div class="col grow-05 justify-content-center">
+                                            <div class="profile-img">
+                                                <img src="./assets/img/perfil/pp.png" class="img-card" alt="About Me">
+                                            </div>
                                         </div>
                                     </div>
-                                </section>
+                                </div>
                             </div>
-                        </div>                        
+                        </div>
+                        <br>
+
+                        <div class="head">
+                            <div class="border">
+                                <div class="row">
+                                    <p>
+                                        Greetings. I'm Carlos Guillermo Rolon Fabian, i studied
+                                        Computational Systems Engineering at Instituto Tecnol&oacute;gico
+                                        de Chetumal.
+                                        <br><br>
+                                        I'm Actually living in Chetumal Quintana Roo.
+                                        <br><br>
+                                        I am a software developer. I am a fan of technology, design, and music. I’m also
+                                        interested in video games and animation.
+                                    </p>
+                                    <p>
+                                        <br>
+                                        <a href="./assets/docs/CV - Carlos Rolon.pdf" class="download-cv"
+                                            target="_blank">Download Resume</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="https://twitter.com/rolonchas?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                                data-size="large" data-show-count="false">Follow @rolonchas</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <br><br>
+                            <a class="twitter-timeline" data-height="400" data-theme="dark" data-link-color="#905FA5"
+                                href="https://twitter.com/rolonchas?ref_src=twsrc%5Etfw">Tweets by rolonchas</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" id="social">
-            <div class="section">
-                <div class="col title" id="title-social">
-                    <div class="overlay">
-                        <h1>
-                            Social Networks
-                        </h1>
-                    </div>                    
-                </div>
-                <div class="col content">
-                    <div class="card card-social">
-                        <div class="top-card">
-                            <div class="row">
-                                <h5 class="text-mobile">Contact me on my social networks</h5>
-                            </div>
-                        </div>
-                        <div class="text-card">
-                            <div class="row">
-                                <div class="social-links">
-                                    <a href="https://www.facebook.com/carlosguillermo.rolonfabian" class="facebook" target="_blank">
-                                        <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a href="https://twitter.com/rolonchas" class="twitter" target="_blank">
-                                        <i class="fab fa-twitter-square"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/carlos-guillermo-rolon-fabian-98ba33180?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpMIP9U%2FyTJODEXHomUuytQ%3D%3D" class="linkedin" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="https://github.com/AvatarRolon" class="github" target="_blank">
-                                        <i class="fab fa-github-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <br><br>
-                            <div class="row">
-                                <a href="https://twitter.com/rolonchas?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @rolonchas</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </div>
-                            <br><br>
-                            <div class="row">
-                                    <a class="twitter-timeline" data-height="300" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/rolonchas?ref_src=twsrc%5Etfw">Tweets by rolonchas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </main>    
+    </main>
 </body>
 
 </html>
